@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIアプリ </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  </head>
+
+<body>
+
+<header>
+  <!-- ナビゲーター -->
+  <div class="navi_wrapper">
+    <ul class="navi_list">
+      <li class="navi_item"><a href="#menuweather">WEATHER</a></li>
+      <li class="navi_item"><a href="#menuouter">CLOSET</a></li>
+      <li class="navi_item"><a href="#menumemo">MEMO</a></li>
+    </ul>
+  </div>
+
+</header>
+<main>
+  <!-- 天気予報 -->
+  <div id="menuweather">
+    <div id="table"></div>
+  </div>
+
+  <!-- アウターの登録 -->
+  <div id="menuouter" class="fadeIn_up">
+    <h2>CLOSET</h2>
+    <h3>もっているアウターを登録する</h3>
+    <div id="outerList">
+      <div id="tableOuter"></div>
+    </div>
+
+    <div id="outerform">
+      <label class="cp_iptxt ef">
+        <input type="text" id="saveouter" value="">
+      </label>
+        <button class="savebutton" id="savebutton">Register</button>
+    </div>
+
+    <h2> Choose WEAR and FEEL</h2>
+    <h3>何を着てどのくらい寒かったかメモする</h3>
+    <div id="warmCold">
+        <select value="wearing" id="selectWear"></select>
+        <div>warm<input type="range" min="0" max="10" value="5" id="howCold">cold</div>
+        <button class="savebutton savewear" id="savebutton2">Memo</button>
+    </div>
+    
+
+  </div>
+
+  <!-- メモ欄 -->
+  <div id="menumemo">
+    <h2>MEMO</h2>
+    <h3>今日着ていく服の参考にする</h3>
+    <div class="eachItemCover itemTitle">
+      <div class="eachItem1">Wear</div>
+      <div class="eachItem2">How Cold</div>
+      <div class="eachItem3">Weather</div>
+      <div class="eachItem4">Wave</div>
+      <div class="eachItem5">Max Temp</div>
+    </div>
+    <!-- 上のメニュー欄 -->
+    <div id="memoAppear"></div>
+
+  </div>
+
+</main>
+
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src="js/test.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* 全体デザイン */
+body{
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    width: 1280px;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+
+/* Navigation部分 */
+/* .navi_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.navi_list{
+    display: flex;
+    justify-content: left;
+}
+/* navigation内アイテムを横並びに */
+
+.navi_item{
+    margin:30px 50px 30px 0;
+}
+/* navigation内アイテムの配置調整 */
+
+.navi_item>a{
+    color:#222;
+    text-transform: uppercase;
+}
+/* 文字の指定 */
+
+/* メインテーブルデザイン */
+#mainTable{
+    width: 1280px;
+    height: 719px;
+    margin:auto;
+
+}
+
+/* タイトルデザイン */
+h1 {
+    font-size: 100px;
+    text-align: right;
+}
+
+/* 更新時間デザイン */
+#time {
+    text-align: right;
+    font-size: 24px;
+}
+
+/* 天気予報の中身デザイン */
+    #weather {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    #wind{
+        text-align:right;
+        margin-top: 20px;
+        line-height:1.5;
+        font-size: 25px;
+        padding-right:50px;
+    }
+
+    #maxTemp{
+        line-height:1.5;
+        font-size: 30px;
+        font-weight:bold;
+        padding-left:200px;
+    }
+
+    #chanceOfRainLarge{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #crtitle{
+        font-size: 50px;
+    }
+
+    #chanceOfRainSmall{
+        display:flex;
+        justify-content: center;
+    }
+
+    .rainchance{
+        margin-right:30px;
+        font-size: 50px;
+        font-weight:bold;
+    }
+
+/* アウターの登録 */
+
+    h2{
+        margin-top: 50px;
+        margin-bottom:20px;
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    #outerform{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /* テキストボックス */
+    .cp_iptxt {
+        position: relative;
+        width: 300px;
+        padding-right:30px;
+    }
+
+    .cp_iptxt input[type='text'] {
+        font: 15px/24px sans-serif;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.3em;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        color: #000;
+        border: none;
+        border-bottom: 2px solid #1b2538;
+        background: transparent;
+    }
+
+    .ef input[type='text']:focus {
+        border-bottom: 2px solid #da3c41;
+        outline: none;
+    }
+
+    /* 保存ボタン */
+    .savebutton{
+        background-color: black;
+        color:#fff;
+        border:none;
+    }
+
+    .savebutton:hover{
+        background-color: #da3c41;
+        color:#fff;
+        border:none;
+    }
+
+    #outerList{
+        flex-wrap: nowrap;
+        width: 500px;
+        height:200px;
+        margin: auto;
+        border: #797979 solid 1px;
+
+    }
+
+    #tableOuter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .outerEach{
+        width: 100px;
+        padding:10px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .eachItem{
+        display: flex;
+    }
+
+    /* 洋服と暖かさを選ぶ欄 */
+    #warmCold{
+        display: flex;
+        justify-content: center;
+    }
+    #selectWear{
+        margin-right:20px;
+    }
+
+    [type="range"] {
+        width: 200px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        background: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        background: #da3c41;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        z-index: 20;
+    }
+
+    .savewear{
+        margin-left:20px;
+        height:35px;
+    }
+
+
+    /* Memo欄の作成 */
+    #menumemo{
+        margin-top: 40px;
+        padding-top: 10px;
+        padding-bottom:100px;
+        background-color:#d3d3d3;
+    }
+
+    h3 {
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 40px;
+        color: #808080;
+    }
+
+    .eachItemCover{
+        display: flex;
+        justify-content: left;
+        width:1000px;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    .itemTitle{
+        border-bottom: black solid 1px;
+        margin-bottom: 10px;
+
+    }
+
+    .eachItem1{
+        width:30%;
+        padding-bottom: 10px;
+    }
+
+    .eachItem2{
+        width:10%;
+        padding-bottom: 10px;
+    }
+
+    .eachItem3{
+        width:30%;
+        padding-bottom: 10px;
+    }
+
+    .eachItem4{
+        width:20%;
+        padding-bottom: 10px;
+    }
+
+    .eachItem5{
+        width:10%;
+        margin-right:20px;
+        padding-bottom: 10px;
+    }
